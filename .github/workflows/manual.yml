@@ -25,9 +25,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Bump version
-      uses: remorses/bump-version@js
-      with:
-          version_file: ./package.json
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+    - name: Generic Version Bumpr
+      uses: PackagrIO/action-bumpr-generic@v0.0.1
+
 
