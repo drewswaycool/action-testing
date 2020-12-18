@@ -26,5 +26,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     # Runs a single command using the runners shell
-    - name: Send greeting
-      run: echo "Hello ${{ github.event.inputs.name }}"
+    - name: Bump version
+      uses: remorses/bump-version@js
+      with:
+          version_file: ./package.json
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+
