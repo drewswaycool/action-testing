@@ -2,5 +2,5 @@
   uses: remorses/bump-version@js
   on: workflow_dispatch
   with:
-      version_file: ./VERSION
-      github_token: ${{ secrets.GITHUB_TOKEN }}
+    version_file: ./VERSION
+    github_token: ${{ secrets.GITHUB_TOKEN }}
