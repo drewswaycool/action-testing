@@ -1,9 +1,5 @@
 - name: Bump Semantic Version
-  # You may pin to the exact commit or the version.
-  # uses: jessicalostinspace/bump-semantic-version-action@b915bfb0a53965f8206898d80ca6a9b5efb6817f
   uses: jessicalostinspace/bump-semantic-version-action@v1.0.1
   with:
-    # A semantic version you want to increase
-    semantic-version: 
-    # MAJOR, MINOR, or PATCH
-    version-type: # default is MINOR
+    semantic-version: PATCH
+    version-type: PATCH
